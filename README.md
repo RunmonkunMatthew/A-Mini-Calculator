@@ -1,2 +1,2 @@
 # Mini-Calculator
-A mini website for multiplication of nubmers
+A mini calculator website for multiplication of nubmers
