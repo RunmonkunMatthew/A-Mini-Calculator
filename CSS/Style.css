@@ -1,0 +1,257 @@
+body {
+    background-color: gold;
+}
+
+form {
+    text-align: center;
+    background-color: black;
+    padding: 7em;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin-top: 14em;
+    margin-left: 23em;
+    border-top: 5px solid red;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 0.3em 0.9em -0.4em black;
+    animation: myanimation 2s ease-in-out;
+}
+
+@keyframes myanimation {
+    from {
+        margin-left: 10em;
+    }
+
+    to {
+        margin-left: 23em;
+    }
+}
+
+.header {
+    background-color: transparent;
+    padding: 0 40px;
+}
+
+h1 {
+    margin: 1.2em -1em;
+    color: white;
+    font-size: 3em;
+    border-bottom: 2px solid gold;
+    animation: myheader 2s ease-in-out;
+}
+
+@keyframes myheader {
+    from {
+        margin-left: -5em;
+        font-size: 1.5em;
+        border-bottom: 0.5px solid gold;
+    }
+
+    to {
+        margin-left: -1em;
+        font-size: 3em;
+        border-bottom: 2px solid gold;
+
+    }
+}
+
+.header span {
+    color: gold;
+    font-size: 1.2em;
+}
+
+.main {
+    margin: 1em 30em;
+    animation: myform 2s ease-in-out;
+}
+
+@keyframes myform {
+    from {
+        margin: 0.5em 10em;
+    }
+
+    to {
+        margin: 1em 30em;
+    }
+}
+
+.main label {
+    font-size: 1.8em;
+    color: gold;
+    margin-left: -6.2em;
+}
+
+input {
+    margin: 2px 0;
+    border: 1px solid gold;
+    border-radius: 5px;
+}
+
+#width,
+#height,
+#answer {
+    width: 18em;
+    height: 1.5em;
+    padding: 0.8em;
+}
+
+.main input:nth-of-type(3) {
+    width: 15em;
+    font-size: 1em;
+    font-family: sans-serif;
+    color: gold;
+    background-color: transparent;
+    padding: 1em;
+    text-transform: capitalize;
+    border: 1px solid gold;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.main #button:hover {
+    background-color: gold;
+    border: none;
+    color: black;
+}
+
+@media (max-width: 800px) {
+    form {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        padding: 5em;
+        margin-left: 11em;
+        margin-top: 7em;
+        animation: myanimation 1s ease-in-out;
+    }
+
+    @keyframes identifier {
+        from {
+            margin-left: -3em;
+        }
+
+        to {
+            margin-left: 5em;
+        }
+    }
+
+    h1 {
+        margin: 0.7em -1em;
+        color: white;
+        font-size: 2em;
+        border-bottom: 2px solid gold;
+    }
+
+    .main {
+        margin-left: 0.1em;
+        animation: mymain-media 1s ease-in-out;
+    }
+
+    @keyframes mymain-media {
+        from {
+            margin-left: -3em;
+        }
+
+        to {
+            margin-left: 0.1em;
+        }
+    }
+
+    .main label {
+        font-size: 1.5em;
+        margin-left: 2.7em;
+    }
+
+    #width,
+    #height,
+    #answer {
+        width: 14em;
+        height: 1em;
+        padding: 0.8em;
+    }
+
+    .main input:nth-of-type(3) {
+        width: 12em;
+        font-size: 0.8em;
+        margin-left: 2em;
+    }
+
+    .main #button:hover {
+        font-size: 0.8em;
+        background-color: gold;
+        border: none;
+        color: black;
+    }
+}
+
+@media (max-width: 500px) {
+    form {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        padding: 5em;
+        margin-left: 1.3em;
+        margin-top: 5em;
+        animation: myanimation 1s ease-in-out;
+    }
+
+    @keyframes identifier {
+        from {
+            margin-left: -3em;
+        }
+
+        to {
+            margin-left: 3em;
+        }
+    }
+
+    h1 {
+        margin: 0.7em -1.5em;
+        color: white;
+        font-size: 2em;
+        border-bottom: 2px solid gold;
+    }
+
+    .main {
+        margin-left: -1.7em;
+        animation: mymain-media 1s ease-in-out;
+    }
+
+    @keyframes mymain-media {
+        from {
+            margin-left: -4em;
+        }
+
+        to {
+            margin-left: -2em;
+        }
+    }
+
+    .main label {
+        font-size: 1.3em;
+        margin-left: 3em;
+    }
+
+    #width,
+    #height,
+    #answer {
+        width: 12em;
+        height: 1em;
+        padding: 0.8em;
+    }
+
+    .main input:nth-of-type(3) {
+        width: 12em;
+        font-size: 0.8em;
+        margin-left: 1.3em;
+    }
+
+    .main #button:hover {
+        font-size: 0.8em;
+        background-color: gold;
+        border: none;
+        color: black;
+    }
+}
